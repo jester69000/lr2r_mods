@@ -331,6 +331,11 @@ class MainCharacter():
             percentage = amount * 1.0 / max(self.max_energy, 1)
             self.log_event(f"You: {percentage:+.0%} Max Energy", "float_text_yellow")
 
+    ###jes: setter for dick size
+    def change_dick_size(self, amount: int, add_to_log = True) -> int:
+        amount = builtins.int(builtins.round(amount))
+        self.dick_size += amount
+
     def change_masturbation_novelty(self, amount: int, add_to_log = True):
         amount = builtins.int(builtins.round(amount))
         if amount + self.masturbation_novelty > 100:
