@@ -1,9 +1,9 @@
 #Use these test serums to test the MC serum screen.
 
-
-
 init 2 python:
-    mc_serum_feat_dick_growth_test = MC_Serum_Trait("Serum: Energy Test", "Low Concentration Sedatives", "energy", [perk_test_feat_dick_growth_01, perk_test_feat_dick_growth_02, perk_test_feat_dick_growth_03], [perk_feat_dick_growth_test_advance_req_01], "perk_test_label")
+    list_of_mc_traits: list[MC_Serum_Trait] = []
+    # from game.main_character.mc_serum_trait_ren import list_of_mc_traits
+    mc_serum_feat_dick_growth_test = MC_Serum_Trait("Serum: Dick Growth Test", "Human Growth Rebooter", "physical", [perk_test_feat_dick_growth_01, perk_test_feat_dick_growth_02, perk_test_feat_dick_growth_03], [perk_feat_dick_growth_test_advance_req_01], "perk_test_label")
 #     mc_serum_aura_test = MC_Serum_Trait("Serum: Aura Test", "Mood Enhancer", "aura", [perk_test_aura_01, perk_test_aura_02, perk_test_aura_03], [perk_aura_test_advance_req_01], "perk_test_label")
 #     mc_serum_cum_test = MC_Serum_Trait("Serum: Cum Test", "Fertility Enhancement", "cum", [perk_test_cum_01, perk_test_cum_02, perk_test_cum_03], [perk_cum_test_advance_req_01], "perk_test_label")
 #     mc_serum_physical_test = MC_Serum_Trait("Serum: Physical Test", "Breast Enhancement", "physical", [perk_test_physical_01, perk_test_physical_02, perk_test_physical_03], [perk_physical_test_advance_req_01], "perk_test_label")
