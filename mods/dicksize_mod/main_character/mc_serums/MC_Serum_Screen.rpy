@@ -7,7 +7,7 @@ init 5:
         use screen_mc_serum_basic_stats()
         vbox:
 
-            xcenter 810
+            xcenter 960
             yalign 0.1
             # background "#1a45a1aa"
             text "Select Personal Serum(s)" style "menu_text_title_style" size 48 xanchor 0.5 xalign 0.5
@@ -24,10 +24,14 @@ init 5:
                     ysize 500
                     vbox:
                         xsize 300
-                        text "Anatomical" style "menu_text_title_style" size 32 xalign 0.5
-                        null height 20
-                        for trait in mc_serum_get_energy_list():
-                            use screen_personal_serum_button(trait)
+                        if mc_aura_serum_unlocked():
+                            text "Anatomical" style "menu_text_title_style" size 32 xalign 0.5
+                            null height 20
+                            for trait in mc_serum_get_anatomical_list():
+                                use screen_personal_serum_button(trait)
+                        else:
+                            text "???" style "menu_text_title_style" size 32 xalign 0.5
+
                 frame:
                     background Frame("gui/frame.png", 5,5)
                     xalign 0.5

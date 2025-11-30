@@ -410,7 +410,7 @@ def init_mc_traits():
     global mc_serum_feat_dick_growth
     mc_serum_feat_dick_growth = MC_Serum_Trait("Serum: Dick Growth",
         "Human Growth Rebooter",
-        "physical",
+        "anatomical",
         [perk_feat_dick_growth_small, perk_feat_dick_growth_med, perk_feat_dick_growth_large],
         [perk_feat_dick_growth_advance_req_01],
         "perk_feat_dick_growth_upg_label",
